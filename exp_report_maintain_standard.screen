@@ -205,6 +205,7 @@
                         f1.setLovService('csh.csh_pay_req_emp_lov');
                         // f1.setLovService('expm.exp_req_employee_lov');
 					    //add by lyt 2019.09.05 Corporate Card类型报销单计划付款行（员工收款对象）银行账户显示AE标识的，BBB我是TEST2修改BBB
+					    //add by lyt 2019.09.05 Corporate Card类型报销单计划付款行（员工收款对象）银行账户显示AE标识的，AAA我是TEST1修改AAA
                         doc_type_code3='${/model/report_type_code/record/@exp_type_code}';
                         if(doc_type_code3=='HGIBX0100'){
                             record.getMeta().getField('payee_partner_name').setLovPara('doc_type_code', doc_type_code3);
